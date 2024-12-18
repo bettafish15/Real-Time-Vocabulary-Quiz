@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md font-medium transition-colors duration-200;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary-600 text-white hover:bg-primary-700;
+  }
+
+  .btn-secondary {
+    @apply btn bg-gray-200 text-gray-800 hover:bg-gray-300;
+  }
+
+  .input {
+    @apply w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6;
+  }
+
+  .quiz-option {
+    @apply flex items-center p-4 rounded-lg border-2 cursor-pointer transition-colors duration-200;
+  }
+
+  .quiz-option-selected {
+    @apply border-primary-500 bg-primary-50;
+  }
+
+  .quiz-option-correct {
+    @apply border-green-500 bg-green-50;
+  }
+
+  .quiz-option-incorrect {
+    @apply border-red-500 bg-red-50;
+  }
+}
